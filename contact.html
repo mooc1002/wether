@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/contact/contact.css">
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">Wether technologies</a></h1>
+        
+        <!--レスポンシブ-->
+        <div class="sp-nav">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="news.html">News</a></li>
+                <li><a href="recruit.html">Recruit</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="head">
+            <h2>お問い合わせ</h2>
+            <p class="sub">ご質問はこちらからお願いします</p>
+        </div>
+
+        <form action="#">
+            <p><label>お名前:(必須) <br>
+                    <input type="text" name="name" placeholder="例　山田　太郎" required></label></p>
+            <p><label>電話番号:(任意)<br>
+                    <input type="tel" name="tel" placeholder="例　08012121212"></label></p>
+            <p><label>メールアドレス:(必須) <br>
+                    <input type="email" name="mail" placeholder="例　山田　太郎" required></label></p>
+            <p>お問い合わせ種類 <br>
+                <label>サービス<input type="radio" name="kind" value="0"></label>
+                <label>採用<input type="radio" name="kind" value="1"></label>
+            </p>
+
+            <p>お問い合わせ内容:(必須)<br>
+                <textarea name="question" cols="50" rows="5" required></textarea>
+            </p>
+
+            <input type="submit" value="送信する">
+        </form>
+    </main>
+
+    <!--footer-->
+    <footer>
+        <p>copyright&copy;2021 mooc1002</p>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

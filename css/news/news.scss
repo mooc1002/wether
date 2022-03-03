@@ -1,0 +1,55 @@
+@import url(../common/header.css);
+@import url(../common/footer.css);
+@import url(../common/parts.css);
+
+
+
+main {
+    padding-bottom: 50px;
+    background-color: rgba($color: skyblue, $alpha: .2);
+
+
+    & .sub {
+        text-align: center;
+    }
+
+    & .info {
+        width: 40%;
+        margin: 20px auto 0;
+    }
+
+    & dl {
+        padding: 10px;
+        border-bottom: 1px dotted rgb(134, 134, 91);
+
+        & a {
+            display: flex;
+
+            & dt {
+                width: 30%;
+            }
+            & dd {
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:768px) {
+  main {
+      & .info {
+          width: 90%
+      }
+
+      & a {
+
+        & dt {
+            width: 20%;
+        }
+        & dd {
+            width: 80%;
+            font-size: 12px;
+        }
+    }
+  }
+}

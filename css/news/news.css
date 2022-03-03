@@ -1,0 +1,49 @@
+@import url(../common/header.css);
+@import url(../common/footer.css);
+@import url(../common/parts.css);
+main {
+  padding-bottom: 50px;
+  background-color: rgba(135, 206, 235, 0.2);
+}
+
+main .sub {
+  text-align: center;
+}
+
+main .info {
+  width: 40%;
+  margin: 20px auto 0;
+}
+
+main dl {
+  padding: 10px;
+  border-bottom: 1px dotted #86865b;
+}
+
+main dl a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main dl a dt {
+  width: 30%;
+}
+
+main dl a dd {
+  width: 70%;
+}
+
+@media screen and (max-width: 768px) {
+  main .info {
+    width: 90%;
+  }
+  main a dt {
+    width: 20%;
+  }
+  main a dd {
+    width: 80%;
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=news.css.map */

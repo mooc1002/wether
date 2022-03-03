@@ -1,0 +1,298 @@
+@import url(common/header.css);
+@import url(common/footer.css);
+@import url(common/parts.css);
+
+
+$phrase:rgb(240, 248, 255);
+$white: #fff;
+$black: #000;
+$vio:rgb(238, 130, 238);
+
+
+.mainvisual {
+    width: 100%;
+    height: 700px;
+    background-image: url(../images/paper.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__phrase {
+        font-size: 35px;
+        color: $phrase;
+    }
+}
+
+.two {
+    margin: 0 auto;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    display: flex;
+
+    &__left {
+        width: 50%;
+        height: 600px;
+        background-image: url(../images/drop.jpg);
+        background-size: cover;
+    }
+    &__right {
+        width: 50%;
+        height: 600px;
+        background-color: lightgray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & .circle {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 300px;
+            border: 2px solid $white;
+            border-radius: 50%;
+            box-shadow: 0 0 100px skyblue, 0 0 20px yellow;
+
+            & h2 {
+                margin-bottom: 30px;
+                color: $white;
+                font-weight: bold;
+                text-shadow: 0 0 10px $black;
+            }
+            & p {
+                color: $white;
+                font-weight: bold;
+                text-shadow: 0 0 5px $black;
+            }
+        }
+    }
+}
+
+.triple-elments {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    background: linear-gradient(-23deg, gray, skyblue, lightgray);
+
+    &__circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 300px;
+        border: 2px solid $white;
+        border-radius: 50%;
+
+        & h2 {
+            color: $white;
+            font-weight: bold;
+        }
+    }
+}
+
+.case {
+    display: flex;
+
+    & .common {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex: 1;
+        height: 450px;
+
+        &__box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            height: 70%;
+            background-color: rgba($color: $white, $alpha: 0.8);
+            border-radius: 20px;
+
+            & h4 {
+                padding: 30px 0;
+                color: rgba(158, 206, 63, 0.89);
+            }
+
+            & img {
+                width: 20%;
+                border-radius: 50%;
+                box-shadow: 0 0 10px gold;
+            }
+
+            & p {
+                width: 50%;
+                line-height: 2;
+            }
+        }
+    }
+
+    & .case1 {
+        background-image: url(../images/sun.jpg);
+        background-size: cover;
+    }
+    & .case2 {
+        background-image: url(../images/storm.jpg);
+        background-size: cover;
+
+        & .storm {
+            color: violet;
+        }
+    }
+}
+
+.message {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    background-image: url(../images/sunrise.jpg);
+    background-size: cover;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-color: rgba($color: $black, $alpha: .3);
+        z-index: 2;
+    }
+
+    & h5 {
+        margin-bottom: 20px;
+        color: $white;
+        text-shadow: 0 0 5px $black;
+        z-index: 3;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        height: 250px;
+        z-index: 3;
+
+        & p {
+            padding-top: 50px;
+            width: 60%;
+            line-height: 2;
+            color: $white;
+        }
+    }
+}
+
+
+@media screen and(max-width:768px) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+
+
+    .mainvisual {
+        width: 100%;
+        height: 300px;
+
+        &__phrase {
+            font-size: 20px;
+        }
+    }
+
+    .two {
+        display: flex;
+        flex-direction: column;
+
+        &__left {
+            order: 2;
+            width: 100%;
+        }
+        &__right {
+            order: 1;
+            width: 100%;
+        }
+    }
+
+    .triple-elments {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+        &__circle {
+            width: 250px;
+            height: 250px;
+            margin-bottom: 25px;
+            margin-top: 25px;
+        }
+    }
+
+    .case {
+       display: block;
+    
+        & .common {
+    
+            &__box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 80%;
+                height: 70%;
+                background-color: rgba($color: $white, $alpha: 0.8);
+                border-radius: 20px;
+    
+                & p {
+                    width: 80%;
+                    line-height: 2;
+                }
+            }
+        }
+    
+        & .case1 {
+            background-image: url(../images/sun.jpg);
+            background-size: cover;
+        }
+        & .case2 {
+            background-image: url(../images/storm.jpg);
+            background-size: cover;
+    
+            & .storm {
+                color: $vio;
+            }
+        }
+    }
+
+    .message {
+        height: auto;
+
+        & h5 {
+            font-size: 20px;
+        }
+
+        &__box {
+            margin: 20px 0;
+
+            & p {
+                margin:0 auto;
+                padding-top: 0;
+                width: 90%;
+                color: #fff;
+            }
+        }
+    }
+}

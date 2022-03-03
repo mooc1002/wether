@@ -1,0 +1,51 @@
+@import url(../common/header.css);
+@import url(../common/footer.css);
+@import url(../common/parts.css);
+
+main {
+
+    & .head {
+        text-align: center;
+    }
+
+    & table {
+        width: 50%;
+        margin: 10px auto 15px;
+        border: 1px solid;
+        border-collapse: collapse;
+        
+        & caption {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        & tr {
+            border: 1px solid;
+        }
+
+        & th, td {
+            border: 1px solid;
+            padding: 10px;
+        }
+
+        & th {
+            background-color: rgba(134, 134, 91, .5);
+        }
+    }
+}
+
+@media screen and(max-width:768px) {
+    main {
+
+        & table {
+            width: 90%;
+
+            & th {
+                width: 30%;
+            }
+            &  td {
+                font-size: 12px;
+            }
+        }
+    }
+  }

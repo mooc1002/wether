@@ -1,0 +1,44 @@
+@import url(../common/header.css);
+@import url(../common/footer.css);
+@import url(../common/parts.css);
+main .head {
+  text-align: center;
+}
+
+main table {
+  width: 50%;
+  margin: 10px auto 15px;
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+main table caption {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+main table tr {
+  border: 1px solid;
+}
+
+main table th, main table td {
+  border: 1px solid;
+  padding: 10px;
+}
+
+main table th {
+  background-color: rgba(134, 134, 91, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+  main table {
+    width: 90%;
+  }
+  main table th {
+    width: 30%;
+  }
+  main table td {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=recruit.css.map */
