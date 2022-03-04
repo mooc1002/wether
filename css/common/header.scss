@@ -51,12 +51,13 @@ header {
             margin-left: 10px;
         }
         & nav {
+            display: none;
             width: 100vw;
             height: 100vh;
             position: absolute;
             top: -100%;
 
-            &.show {
+           &.show {
                 z-index: 10;
                 display: block;
                 top: 0;
