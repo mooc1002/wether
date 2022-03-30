@@ -27,6 +27,7 @@ main table th, main table td {
 }
 
 main table th {
+  width: 20%;
   background-color: rgba(134, 134, 91, 0.5);
 }
 
