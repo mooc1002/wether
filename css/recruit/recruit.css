@@ -1,14 +1,17 @@
 @import url(../common/header.css);
 @import url(../common/footer.css);
 @import url(../common/parts.css);
-main .head {
-  text-align: center;
+main {
+  background-color: rgba(135, 206, 235, 0.2);
+}
+
+main .requirements {
+  padding: 20px 0;
 }
 
 main table {
   width: 50%;
-  margin: 10px auto 15px;
-  border: 1px solid;
+  margin: 0 auto;
   border-collapse: collapse;
 }
 
