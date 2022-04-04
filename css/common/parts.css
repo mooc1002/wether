@@ -46,5 +46,7 @@ a {
   background-image: url(../../images/paper.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  text-shadow: 0 0 10px #333;
+  color: #fff;
 }
 /*# sourceMappingURL=parts.css.map */
