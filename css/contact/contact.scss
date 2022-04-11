@@ -16,15 +16,16 @@ main {
 }
 
 form {
-    width: 30%;
+    width: 40%;
     margin: 0 auto;
     padding: 10px 0;
+    background-color: beige;
 
     & input[type="text"],
     input[type="tel"],
     input[type="email"],
     textarea {
-        width: 400px;
+        width: 80%;
     }
 
     & p {

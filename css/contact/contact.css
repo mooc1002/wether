@@ -14,16 +14,17 @@ main .sub {
 }
 
 form {
-  width: 30%;
+  width: 40%;
   margin: 0 auto;
   padding: 10px 0;
+  background-color: beige;
 }
 
 form input[type="text"],
 form input[type="tel"],
 form input[type="email"],
 form textarea {
-  width: 400px;
+  width: 80%;
 }
 
 form p {
